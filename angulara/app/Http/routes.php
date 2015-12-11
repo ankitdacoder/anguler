@@ -10,6 +10,7 @@ Route::group(['prefix' => 'api'], function()
     Route::post('authenticate', 'AuthenticateController@authenticate');
     Route::get('employees','Employees@index'); 
     Route::get('logout','AuthenticateController@logout');
+    Route::post('addUser','Employees@store');
 });
 
 // Route::get('employees','Employees@index'); 

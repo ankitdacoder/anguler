@@ -10,7 +10,7 @@
 angular.module('authApp')
   .directive('sidebar',['$location',function() {
     return {
-      templateUrl:'public/directives/sidebar/sidebar.html',
+      templateUrl:'public/admin_pages/sidebar.html',
       restrict: 'E',
       replace: true,
       scope: {

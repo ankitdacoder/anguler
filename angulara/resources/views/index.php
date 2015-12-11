@@ -58,9 +58,10 @@
 
                 
 
-  <script src="<?=asset('public/scripts/authController.js') ?>"></script>
-        <script src="<?=asset('public/scripts/userController.js') ?>"></script>
+                   <script src="<?=asset('public/scripts/authController.js') ?>"></script>
+                   <script src="<?=asset('public/scripts/userController.js') ?>"></script>
                    <script src="<?=asset('public/scripts/HomeCtrl.js') ?>"></script>
+                   <script src="<?=asset('public/scripts/UserCtrl.js') ?>"></script>
     </head>
    
     <body>

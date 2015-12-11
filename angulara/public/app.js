@@ -44,10 +44,10 @@
         templateUrl:'views/admin/pages/login.html',
         url:'/login'
     })
-      .state('dashboard.chart',{
-        templateUrl:'views/admin/chart.html',
-        url:'/chart',
-        controller:'ChartCtrl',
+      .state('dashboard.addUser',{
+        url:'/addUser', 
+        templateUrl:'views/admin/addUser.html',
+        controller:'UserCtrl'
        
     })
       .state('dashboard.table',{
