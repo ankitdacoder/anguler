@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-7 col-md-offset-2">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please Sign In</h3>
+                </div>
+                <div class="panel-body">
+                <div class="alert alert-danger alert-dismissable" ng-if="error!=''">
+<button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+{{error}}
+
+</div>
+                    <form name="myForm">
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email" ng-model="auth.email"  required>
+                  <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                  <span ng-show="myForm.email.$error.required">Email is required.</span>
+                  <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                  </span>
+                  </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" ng-model="auth.password"  required>
+                 <span style="color:red" ng-show="myForm.password.$dirty">
+               <span ng-show="myForm.password.$error.required">Password is required.</span>
+                </span>
+            </div>
+            <button  ng-disabled="myForm.email.$dirty && myForm.email.$invalid ||
+  myForm.password.$dirty && myForm.password.$invalid" class="btn btn-primary" ng-click="auth.login(myForm)">Submit</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
